@@ -9,5 +9,4 @@ public class EsquinaBeerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EsquinaBeerApplication.class, args);
 	}
-
 }
