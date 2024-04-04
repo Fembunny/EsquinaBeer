@@ -113,7 +113,7 @@ body{
     box-shadow: 4px 4px 12px #aaaa;
 }
 
-.produtos .col {
+.item .col {
     text-align: -webkit-center;
     background-color: #ddd;
     width: 145px;
@@ -153,12 +153,13 @@ body{
 }
 
 .product-price-container {
-    margin-top: 8px;
+    margin: 5px 0px 0px 7px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
 }
+
 
 .button-hover-background {
     background: #E61E43;
@@ -167,10 +168,11 @@ body{
     border-radius: 100%;
     padding: 4px 2px;
     font-weight: bold;
-    width: 30%;
+    width: 70%;
     text-align: -webkit-center;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0px 0px 10px 38px;
+    /* float: right; */
 }
 
 .button-hover-background:hover {
@@ -361,6 +363,29 @@ body{
     max-height: 100vh;
 }
 
+.btn-success {
+    float: right;
+    margin: 0px 0px 50px 0px;
+}
+
+td {
+    text-align: center;
+    align-items: center;
+}
+
+strong{
+    color: #005E36;
+}
+
+.aviso {
+    width: 20%;
+    height: 30px;
+    background-color: #005E36;
+    color: white;
+    position: fixed;
+    top: 150px;
+    right: 0;
+}
 /*ver carrinho responsivo*/
 @media screen and (max-width: 760px) {  
     .containerMain {
