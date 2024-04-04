@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<section th:fragment="fardoLongNeck" id="fardoLongNeck">
+    <div class="row"> 
+        <div class="col-sm-12"> 
+            <div class="col-title"> 
+                <strong>Fardo cerveja Long Neck</strong>
+            </div> 
+        </div> 
+    </div>
+    <div class="col-produtos">
+        <div class="produtos">
+            <div th:each="produto : ${produtos}" class="item" th:if="${produto.categoria == 'FardoLongNeck'}">
+                <div class="col">
+                    <img th:src="${produto.src_img}" class="product-image"/>
+                </div>
+                <div class="product-price-container">
+                    <strong>R$<span th:text="${produto.preco}"></span></strong>
+                    <form th:action="@{/adicionar}" method="post">
+                        <input type="hidden" name="produtoId" th:value="${produto.id}"/> <!-- ID do produto -->
+                        <button type="submit" class="button-hover-background">+</button>
+                    </form>
+                </div>
+                <span th:text="${produto.nome}" class="product-title"></span>
+            </div>
+        </div>
+    </div>
+</section>
+</html>
