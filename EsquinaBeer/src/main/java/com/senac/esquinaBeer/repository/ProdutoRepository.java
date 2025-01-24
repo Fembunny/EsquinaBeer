@@ -8,6 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<ProdutoEntity, Integer> {
+    @SuppressWarnings("null")
     Optional<ProdutoEntity> findById(Integer id); // Consulta por ID
 
     List<ProdutoEntity> findByNomeContainingIgnoreCase(String nome); // Consulta por nome (ignorando maiúsculas/minúsculas) usando JPQL
